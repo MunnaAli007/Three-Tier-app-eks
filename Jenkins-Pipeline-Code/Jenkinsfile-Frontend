@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/MunnaAli007/Three-Tier-app-eks/edit/main/Jenkins-Pipeline-Code/Jenkinsfile-Frontend'
+                git credentialsId: 'GITHUB', url: 'https://github.com/MunnaAli007/Three-Tier-app-eks'
             }
         }
         stage('Sonarqube Analysis') {
@@ -82,7 +82,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/MunnaAli007/Three-Tier-app-eks/edit/main/Jenkins-Pipeline-Code/Jenkinsfile-Frontend'
+                git credentialsId: 'GITHUB', url: 'https://github.com/MunnaAli007/Three-Tier-app-eks'
             }
         }
         stage('Update Deployment file') {
